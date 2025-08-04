@@ -154,8 +154,10 @@ Signal →---[C1]---+----[POT1]----+
 #### `Fc` Quick Reference Table
 
 ![rc_frequency_response]
+![rc_frequency_response_h]
 Source: `rc_filters_frequency_response.py`
 
 
 <!-- Assets -->
 [rc_frequency_response]: assets/rc_frequency_response.png "rc_frequency_response"
+[rc_frequency_response_h]: assets/rc_frequency_response_h.png "rc_frequency_response_h"
