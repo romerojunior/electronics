@@ -1,4 +1,4 @@
-# Eletronics
+# Electronics
 
 ## Schematics
 
