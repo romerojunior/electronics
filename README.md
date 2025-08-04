@@ -106,6 +106,23 @@ Example of a custom made pedal inspired on the classic MXR Distortion+:
 
 ![pedal]
 
+## Workshop Tools
+
+List of asorted tools used in the workshop:
+
+- Drill press, [Amazon](https://www.amazon.nl/EBERTH-Tafelboormachine-kolomboormachine-spindelslag-werkplaatsgereedschap/dp/B01DUEDPX6)
+- Dremel, [Amazon](https://www.amazon.nl/Dremel-3000-Multitool-130W-Multifunctioneel/dp/B014UXZHGY)
+- Multimeter, [Amazon](https://www.amazon.nl/Aeyytoe-DC-spanning-achtergrondlicht-spanningsmeter-elektriciens/dp/B0C8214NBM)
+- Oscilloscope, [Amazon](https://www.amazon.nl/HANMATEK-Digitale-Oscilloscoop-Laboratorium-DOS1102/dp/B0833X3RFK)
+- Cutting mat, [Amazon](https://www.amazon.nl/Zelfgenezende-roterende-dubbelzijdige-knutselsnijplank-plakboekproject/dp/B088LZNS1M)
+- Breadboards, [Amazon](https://www.amazon.nl/Solderless-Prototype-Breadboard-Protoboard-Universal/dp/B07MY24K28)
+- Function Generator, [Amazon](https://www.amazon.nl/ANGEEK-Generator-Adjustable-Frequency-Amplitude/dp/B08LGRG7L2)
+- Soldering Iron, [Amazon](https://www.amazon.nl/Lytool-Soldeerstation-Display-Temperatuurbereik-Wachtwoordbeveiliging/dp/B0987H26KP)
+- Solder tin, [Amazon](https://www.amazon.nl/Soldeertin-soldeerdraad-soldeertin-vloeimiddel-colofonium/dp/B07SRXWBDS)
+- Solder wick, [Amazon](https://www.amazon.nl/dp/B093ZYD79M/ref=sspa_dk_detail_1?pd_rd_i=B093ZYD79M)
+- 24 AWG wires, [Amazon](https://www.amazon.nl/gp/product/B089CHVN7G)
+- Shrinkable sleeves, [Amazon](https://www.amazon.nl/Eventronic-Krimpkous-Waterdicht-Elektrische-Draadschakelaars/dp/B08SMGQ93M)
+
 [sodium_persulfate]: assets/sodium_persulfate.jpg "Sodium persufate"
 [paper_vs_etching_paper]: assets/paper_vs_etching_paper.jpg "paper_vs_etching_paper"
 [clear_results]: assets/clear_results.jpg "clear_results"
