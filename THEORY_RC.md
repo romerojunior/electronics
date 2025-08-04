@@ -53,7 +53,7 @@ Capacitors behave quite differently in AC (Alternating Current) circuits compare
 
 However, low frequencies (bass) are passed less effectively, and high frequencies (treble) pass more easily.
 
-A capacitor in an AC circuit introduces something called Capacitive Reactance (`Xc`), which is a frequency-dependent resistance:
+A capacitor in an AC circuit introduces something called Capacitive Reactance (`Xc`), which is a **frequency-dependent resistance**:
 
 `Xc = 1 / (2 * π * f * C)`
 
