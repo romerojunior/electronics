@@ -75,9 +75,12 @@ A **0.8mm** drill bit is ideal for most components (see below).
 
 To drill into the aluminum case, a step drill kit like the one below can be used along with a handheld drill or, preferably, a drill press. You can use a pointed metal tool and a hammer to mark the drilling spot, which helps guide the drill bit.
 
+![drill_kit]
+![case]
+
 When using a handheld drill, even slight movements can cause the hole to go off-center, so a steady hand is essential.
 
-![drill_kit]
+
 
 |Material|Price|Links|
 |---|---|---|
@@ -129,3 +132,4 @@ List of asorted tools used in the workshop:
 [etching]: assets/etching.gif "etching"
 [wire24]: assets/24awg.jpg "Wire 24 AWG"
 [cheap_wire]: assets/cheap_wire.jpg "Cheap wire"
+[case]: assets/case.jpg "Case"
