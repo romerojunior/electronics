@@ -1,6 +1,52 @@
 # Theory: Resistors and Capacitors
 
-Ohm's Law: Voltage equals current times resistance. Ohm’s Law lets you control voltage, current, and signal strength in every part of an audio circuit, from gain stages to tone controls.
+## Basic Concepts
+
+**Current (I)** is the flow of electric charge (how many electrons are moving through a wire per second), and it's measured in Amperes (A).
+
+There are two main types or currents:
+
+- DC (Direct Current): Flows in one direction (linear);
+- AC (Alternating Current): Changes direction back and forth (sine wave).
+
+When building audio circuits, you're dealing with both DC and AC.
+
+Audio circuits are powered by DC (usually 9V DC from a battery or power supply), which powers the components like op-amps, transistors, etc. However, a guitar signal is AC, because the voltage fluctuates back and forth as the strings vibrate. It's a small AC signal (usually millivolts to a few volts), carrying the instrument tone.
+
+---
+
+**Voltage (V)** is the **electric potential*** difference between two points. It’s what pushes electric current through a circuit. It's measured in Volts (V).
+
+> \* Electrons (negative charges) want to move toward positive potential, because opposites attract. Electrons move from low to high potential energy, which, because they’re negatively charged, means they flow from negative to positive voltage. But in circuit diagrams we often show conventional current (as if positive charges move from + to –). In reality electrons flow from – to +, but the effect is the same.
+
+Water flow analogy: *Voltage is like the water pressure. Current is like the amount of water flowing. Without pressure (voltage), water (current) won’t flow.*
+
+---
+
+**Impedance** is like resistance but for AC signals. It accounts for how capacitors (capacitive reactance) and inductors (inductive reactance) behave at different frequencies.
+
+---
+
+**Decibel (dB)**  is a logarithmic unit used to measure ratios — often for power, voltage, or signal strength. In audio and electronics, it's commonly used to express gain or loss of a signal.
+
+The formula to convert a voltage ratio into decibels is:
+
+`dB = 20 x log^10(Vout/Vin)`
+
+Positive results represents a gain, negative results represents a loss.
+
+| Voltage Ratio | dB     | Meaning             |
+| ------------- | ------ | ------------------- |
+| 1             | 0 dB   | No change           |
+| 0.707         | -3 dB  | Half power (cutoff) |
+| 0.5           | -6 dB  | Half voltage        |
+| 2             | +6 dB  | Double voltage      |
+| 10            | +20 dB | 10× voltage         |
+
+
+### Ohm's Law
+
+Voltage equals current times resistance. When applied to audio circuits, Ohm’s Law lets you control voltage, current, and signal strength in any part of the circuit, from gain stages to tone controls.
 
 `V = I × R`
 
@@ -12,6 +58,10 @@ Where:
 ## Resistors
 
 A resistor limits the amount of current flowing through a circuit and can create voltage drops. The amount of resistance is measured in ohms (Ω).
+
+Resitors behave in both AC and DC the same way. It does not care about frequency, only about how much current is trying to pass.
+
+In audio circuits, these are the most common types of resistors and how they are used:
 
 | **Type**| **Description** | **Use Case in Guitar Pedals** |
 | --- | --- | --- |
@@ -25,9 +75,15 @@ A resistor limits the amount of current flowing through a circuit and can create
 > * Carbon Film or Metal Film Resistors: 10Ω to 1MΩ in standard values for 1/4w.
 > * Potentiometers: 10kΩ, 50kΩ, 100kΩ, 500kΩ, 1MΩ (logarithmic/audio taper for volume/tone).
 
+---
+
 ### Voltage Divider
 
-As long as the values of `R` are the same, the voltage output will be 1/2 of the voltage output.
+A voltage divider is a circuit made of two resistors (or more) that splits voltage. As long as the values of `R` are the same, the voltage output will be 1/2 of the voltage output.
+
+If you have resistors R1 and R2, and input voltage Vin, the output voltage is:
+
+`Vout = Vin x (R2 / (R1+R2))`
 
 * If `V(in) = 9V` then `V(out) = 4.5V`.
 
@@ -53,16 +109,22 @@ Capacitors behave quite differently in AC (Alternating Current) circuits compare
 
 However, low frequencies (bass) are passed less effectively, and high frequencies (treble) pass more easily.
 
-A capacitor in an AC circuit introduces something called Capacitive Reactance (`Xc`), which is a **frequency-dependent resistance**:
+A capacitor in an AC circuit introduces something called capacitive reactance (`Xc`), which is a **frequency-dependent resistance**. It is also used to calculate the total impedance of a circuit.
 
-`Xc = 1 / (2 * π * f * C)`
+`Xc = 1 / (w * C)` where `w = 2 * π * f`.
 
 Where:
-- **Fc** = Cutoff frequency (in Hz)
+- **Xc** = Capacitive reactance (Ohms, Ω)
 - **f** =  Frequency of the AC signal (Hz)
 - **C** = Capacitance (Farads, F)
+- **w** = Angular frequency (`2 * π * f`) (Rad/s)
 - π ≈ 3.1416
 
+Below is a chart with the `Xc` for different capacitor values for a typical guitar signal range (82 Hz to about 1,200 Hz, having in mind that guitar sounds also contain harmonics and overtones extending well beyond that, up to around 5,000 Hz or more, which contribute to the tone).
+
+![capacitive_reactance]
+
+In audio circuits, these are the most common types of capacitores and how they are used:
 
 | **Type** | **Description** | **Use Case in Guitar Pedals** |
 | --- | --- | --- |
@@ -91,6 +153,10 @@ Typical values used in audio electronics:
 | Electrolytic | Power filtering, DC blocking   | 1µF to 470µF        |
 
 #### Unit of measure (Farads)
+
+Converting Farads is important, since you can often find capacitor values written in different units, such as:
+
+`0.5uF = 500nF` or `1000pf = 1nF`
 
 | Unit Symbol | Unit Name      | Value in Farads (F)         | Multiplier (Scientific Notation) |
 |-------------|----------------|-----------------------------|-----------------------------------|
@@ -161,3 +227,4 @@ Source: `rc_filters_frequency_response.py`
 <!-- Assets -->
 [rc_frequency_response]: assets/rc_frequency_response.png "rc_frequency_response"
 [rc_frequency_response_h]: assets/rc_frequency_response_h.png "rc_frequency_response_h"
+[capacitive_reactance]: assets/capacitive_reactance.png "Capacitive reactance"
