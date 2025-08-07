@@ -87,9 +87,13 @@ When using a handheld drill, even slight movements can cause the hole to go off-
 
 Assembling the components inside the aluminum case can be tricky as the space becomes quite limited once you install the footswitch along with the input and output jacks. The wiring you choose plays a big role: using too many wires, or wires that are too long, will make the assembly unnecessarily complicated.
 
-Typically, **22 or 24 AWG stranded wire** is used because of its flexibility.
+Typically, **22 or 24 AWG stranded wire** is used because of its flexibility. Here is a silicion covered 24 AWG wire purchased on [Amazon](https://www.amazon.nl/dp/B089CHVN7G):
 
-> Brand quality also matters: cheap wires tend to break easily due to the poor quality of the metal.
+![wire24]
+
+Brand quality also matters: cheap wires tend to break easily due to the poor quality of the metal. Below is an example of a cheap wire to keep away from:
+
+![cheap_wire]
 
 Example of a custom made pedal inspired on the classic MXR Distortion+:
 
@@ -123,3 +127,5 @@ List of asorted tools used in the workshop:
 [drill_kit]: assets/drill_kit.jpg "drill_kit"
 [pedal]: assets/pedal.jpg "pedal"
 [etching]: assets/etching.gif "etching"
+[wire24]: assets/24awg.jpg "Wire 24 AWG"
+[cheap_wire]: assets/cheap_wire.jpg "Cheap wire"
